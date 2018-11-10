@@ -1,0 +1,45 @@
+---
+title: "Assig"
+author: "Aruna"
+date: "10 November 2018"
+output: word_document
+---
+```{r}
+#1 .Obtain the elements of the Union between two character vectors Vec1 nad vec2
+vec1=c(rownames(mtcars[1:15,]))
+#vec1
+vec2=c(rownames(mtcars[10:32,]))
+#vec2
+union(vec1,vec2)
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+# 2.Get those elements that are common to both Vectors
+vec1= c(rownames(mtcars[1:15,]))
+vec2= c(rownames(mtcars[10:32,]))
+intersect(vec1,vec2)
+
+```
+```{r}
+# 3.Get the difference of the elements between two character vectors
+vec1= c(rownames(mtcars[1:15,]))
+vec2= c(rownames(mtcars[10:32,]))
+# removing Vec2 from Vec1 and give only Vec1
+setdiff(vec1,vec2)
+#removing Vec1 from Vec2 and give only Vec2
+setdiff(vec2,vec1)
+```
+```{r}
+#4. Test the equality of two character Vector
+vec1= c(rownames(mtcars[1:15,]))
+vec2= c(rownames(mtcars[11:25,]))
+
+vec1==vec2
+```
+
+## R Markdown
+
+
